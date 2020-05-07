@@ -10,7 +10,7 @@ source:
   sha256: 29208b0ed11290558106a409a0d33da9faaed86160efc2b9dc45cc629242e045
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,7 @@ requirements:
     - python
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - scikit-image
     - pandas
     - numba
