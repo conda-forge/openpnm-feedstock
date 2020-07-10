@@ -5,7 +5,7 @@ Home: https://github.com/PMEAL/OpenPNM/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python package for performing pore network modeling of porous media
 
