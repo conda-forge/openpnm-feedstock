@@ -35,8 +35,8 @@ requirements:
     - flatdict
     - transforms3d
     - sympy
-    - docrep ==0.2.7
     - pardiso4py
+    - docrep ==0.2.7
 
 test:
   imports:
