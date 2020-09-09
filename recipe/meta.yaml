@@ -35,7 +35,8 @@ requirements:
     - flatdict
     - transforms3d
     - sympy
-    - docrep
+    - pardiso4py
+    - docrep ==0.2.7
 
 test:
   imports:
@@ -49,7 +50,7 @@ about:
   summary: A Python package for performing pore network modeling of porous media
   description: OpenPNM is a comprehensive framework for performing pore network simulations of porous materials.
 
-  doc_url: https://openpnm.readthedocs.io/en/master/
+  doc_url: https://openpnm.readthedocs.io/en/dev/
   dev_url: https://github.com/PMEAL/OpenPNM/
 
 extra:
