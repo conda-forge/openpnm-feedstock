@@ -1,5 +1,5 @@
 {% set name = "openpnm" %}
-{% set version = "2.5.0" %}
+{% set version = "2.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 864e9088420d4ecac47bd8ed24ab0f52a958c856d8cf84b3c12658eb065ddeb2
+  sha256: bfb9701c7f0d75e629968f13e2cb18946f47c9870548589693129ae3372f86c5
 
 build:
   number: 0
@@ -50,7 +50,7 @@ about:
   summary: A Python package for performing pore network modeling of porous media
   description: OpenPNM is a comprehensive framework for performing pore network simulations of porous materials.
 
-  doc_url: https://openpnm.readthedocs.io/en/master/
+  doc_url: https://openpnm.readthedocs.io/en/dev/
   dev_url: https://github.com/PMEAL/OpenPNM/
 
 extra:
