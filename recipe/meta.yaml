@@ -1,5 +1,5 @@
 {% set name = "openpnm" %}
-{% set version = "2.4.2" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dd72d614727462a72a7fd82776f370156b6da8566471725216ae16ac66f7c990
+  sha256: 864e9088420d4ecac47bd8ed24ab0f52a958c856d8cf84b3c12658eb065ddeb2
 
 build:
   number: 0
@@ -35,7 +35,8 @@ requirements:
     - flatdict
     - transforms3d
     - sympy
-    - docrep
+    - pardiso4py
+    - docrep ==0.2.7
 
 test:
   imports:
