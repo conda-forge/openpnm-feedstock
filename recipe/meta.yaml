@@ -37,6 +37,7 @@ requirements:
     - sympy
     - pardiso4py
     - docrep ==0.2.7
+    - json_tricks
 
 test:
   imports:
