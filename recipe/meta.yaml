@@ -51,7 +51,7 @@ about:
   summary: A Python package for performing pore network modeling of porous media
   description: OpenPNM is a comprehensive framework for performing pore network simulations of porous materials.
 
-  doc_url: https://openpnm.readthedocs.io/en/dev/
+  doc_url: https://pmeal.github.io/OpenPNM/
   dev_url: https://github.com/PMEAL/OpenPNM/
 
 extra:
