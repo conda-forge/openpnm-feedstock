@@ -20,24 +20,26 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
-    - numpy
-    - scipy
-    - matplotlib-base
-    - scikit-image
-    - pandas
-    - numba
-    - networkx
+    - chemicals
+    - docrep >=0.3
+    - flatdict
+    - gitpython
     - h5py
+    - ipython
     - jsonschema
     - json_tricks
-    - terminaltables
-    - gitpython
-    - flatdict
-    - transforms3d
+    - matplotlib-base
+    - networkx
+    - numba
+    - numpy
+    - pandas
+    - pypardiso
+    - scikit-image
+    - scipy
     - sympy
-    - docrep
-    - pardiso4py
-    - paraview
+    - terminaltables
+    - tqdm
+    - transforms3d
 
 test:
   imports:
