@@ -11,7 +11,7 @@ Summary: A Python package for performing pore network modeling of porous media
 
 Development: https://github.com/PMEAL/OpenPNM/
 
-Documentation: https://openpnm.readthedocs.io/en/dev/
+Documentation: https://pmeal.github.io/OpenPNM/
 
 OpenPNM is a comprehensive framework for performing pore network simulations of porous materials.
 
@@ -42,6 +42,7 @@ Installing `openpnm` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `openpnm` can be installed with:
