@@ -17,27 +17,24 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
+    - python >=3.8
     - chemicals
     - docrep >=0.3
-    - flatdict
-    - gitpython
     - h5py
-    - ipython
     - jsonschema
-    - json_tricks
     - matplotlib-base
     - networkx
     - numba
     - numpy
     - pandas
     - pypardiso
+    - rich
     - scikit-image
     - scipy
     - sympy
-    - terminaltables
+    - thermo
     - tqdm
     - transforms3d
 
