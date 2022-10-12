@@ -1,5 +1,5 @@
 {% set name = "openpnm" %}
-{% set version = "2.8.2" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9510b79a516577bcc74df212a8ba0527243017937ee51537caf81c5861fc7c38
+  sha256: 0d6b5cc687f2989d552ebff4ca1dc77d40174a0b67befcf1b34f38a898949273
 
 build:
   number: 0
@@ -17,27 +17,24 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
+    - python >=3.8
     - chemicals
     - docrep >=0.3
-    - flatdict
-    - gitpython
     - h5py
-    - ipython
     - jsonschema
-    - json_tricks
     - matplotlib-base
     - networkx
     - numba
     - numpy
     - pandas
     - pypardiso
+    - rich
     - scikit-image
     - scipy
     - sympy
-    - terminaltables
+    - thermo
     - tqdm
     - transforms3d
 
