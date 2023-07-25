@@ -1,11 +1,11 @@
-About openpnm
-=============
+About openpnm-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openpnm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/PMEAL/OpenPNM/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openpnm-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python package for performing pore network modeling of porous media
 
