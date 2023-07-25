@@ -10,7 +10,7 @@ source:
   sha256: 066baabf84bcb7b10a8bb8672c8468ad525bec946db3d311e6a936d262dd4ecc
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,8 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.9
-    - setuptools_scm    
-    - setuptools    
+    - setuptools
   run:
     - python >=3.9
     - chemicals
@@ -40,6 +39,7 @@ requirements:
     - thermo
     - tqdm
     - transforms3d
+    - setuptools
 
 test:
   imports:
