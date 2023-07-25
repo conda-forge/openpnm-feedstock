@@ -10,16 +10,17 @@ source:
   sha256: 066baabf84bcb7b10a8bb8672c8468ad525bec946db3d311e6a936d262dd4ecc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
+    - setuptools
   run:
-    - python >=3.8
+    - python >=3.9
     - chemicals
     - docrep >=0.3
     - h5py
@@ -47,7 +48,7 @@ about:
   home: https://github.com/PMEAL/OpenPNM/
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_files: LICENSE
   summary: A Python package for performing pore network modeling of porous media
   description: OpenPNM is a comprehensive framework for performing pore network simulations of porous materials.
 
