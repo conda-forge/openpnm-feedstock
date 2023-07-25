@@ -18,6 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools_scm    
+    - setuptools    
   run:
     - python >=3.9
     - chemicals
