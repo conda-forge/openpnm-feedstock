@@ -10,7 +10,7 @@ source:
   sha256: 71d18009aacc6168b1c29fafa65f3078437c7c496d900b30487c119eda4505d3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -31,7 +31,6 @@ requirements:
     - numpy
     - pandas
     - pyamg
-    - pypardiso
     - rich
     - scikit-image
     - scipy
