@@ -1,5 +1,5 @@
 {% set name = "openpnm" %}
-{% set version = "3.4.1" %}
+{% set version = "3.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 95a4ad9dec1eac429deffde5c4a9fe111b7de8f072623d3f6855d7e119e3a422
+  sha256: 1b92c825530324dbccf792378102bf167250246cf7c3a6f9a4220fe3346cf66c
 
 build:
   number: 0
