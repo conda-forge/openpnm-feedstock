@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 1b92c825530324dbccf792378102bf167250246cf7c3a6f9a4220fe3346cf66c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - chemicals
     - docrep >=0.3
     - h5py
@@ -41,6 +41,8 @@ requirements:
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - openpnm
 
