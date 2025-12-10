@@ -10,17 +10,17 @@ source:
   sha256: 37667a1348b46a12d9a6a44245272c3eb9ffe0ccad62a109818020a792c327db
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - chemicals
     - docrep >=0.3
     - h5py
@@ -41,6 +41,8 @@ requirements:
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - openpnm
 
