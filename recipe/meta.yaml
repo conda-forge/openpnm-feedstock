@@ -1,6 +1,5 @@
 {% set name = "openpnm" %}
 {% set version = "3.6.1" %}
-{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -12,17 +11,17 @@ source:
 
 build:
   number: 1
-  noarch: python
+  skip: true  # [py<311]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python {{ python_min }}
+    - python
     - setuptools
     - hatchling
   run:
-    - python >={{ python_min }}
+    - python
     - docrep >=0.3.2
     - h5py >=3.14.0
     - jsonschema >=4.25.1
@@ -34,7 +33,7 @@ requirements:
     - numpy <2.2
     - pandas >=2.3.2
     - pyamg >=5.3.0
-    - pypardiso  # [not osx and (x86_64 or arm64)]
+    - pypardiso  # [linux64 or win64]
     - rich >=14.1.0
     - scikit-image >=0.25.0
     - scipy >=1.16.2
@@ -44,7 +43,7 @@ requirements:
     - transforms3d >=0.4.2
 test:
   requires:
-    - python {{ python_min }}
+    - python
   imports:
     - openpnm
 
