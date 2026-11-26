@@ -1,5 +1,5 @@
 {% set name = "openpnm" %}
-{% set version = "3.6.5" %}
+{% set version = "3.6.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d57ed7354d2d2ca5a09dabcdf1cc02e9c2bf577975e40764cc4b5315d9dbf276
+  sha256: aa51d249d7e83b443ee1c2e65baf33e3258f84ede720f512f4f72020801377db
 
 build:
   number: 0
